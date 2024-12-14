@@ -1,0 +1,33 @@
+{{ $md := .Site.Params.body_is_markdown | default false }}
+
+{{ with .Site.Params.one }}
+{{ if .enable }}
+	<section id="one" class="wrapper style1 special">
+		<div class="inner">
+			<header class="major">
+        <h2>{{ .title | safeHTML}}</h2>
+
+       
+			</header>
+			<ul class="icons major">
+       
+        <li><div class="circle-image">
+			<img src="img/g_elevators.png" alt="Circle Image">
+		</div></li>
+		<li><div class="circle-image">
+			<img src="img/iooc.png" alt="Circle Image">
+		</div></li>
+		<li><div class="circle-image">
+			<img src="img/p_ceylon.png" alt="Circle Image">
+		</div></li>
+		<li><div class="circle-image">
+			<img src="img/cbl.png" alt="Circle Image">
+		</div></li>
+		<!-- <li><div class="circle-image">
+			<img src="img/hotel_logo.png" alt="Circle Image">
+		</div></li> -->
+			</ul>
+		</div>
+	</section>
+{{ end }}
+{{ end }}
