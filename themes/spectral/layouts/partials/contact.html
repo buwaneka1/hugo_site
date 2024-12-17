@@ -7,8 +7,8 @@
     <header class="major">
       <h2>{{ .title }}</h2>
       {{ partial "body_text.html" (dict "context" . "md" $md) }}
+      <p>email: contact@ckalanandsons.com</p>
     </header>
-    <form method="post" action="https://formspree.io/f/{{ .formspree_form_id }}">
       <!--
       This code represents a contact form layout in an HTML file. It is typically used in a website or web application to allow users to send messages or inquiries.
 
@@ -43,7 +43,6 @@
         </div>
       </div>
       -->
-    </form>
   </div>
 </section>
 {{ end }}

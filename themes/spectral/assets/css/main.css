@@ -3056,7 +3056,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
+			background-color: #ffffff;
 			color: #d3d4e4;
 		}
 
@@ -3640,6 +3640,9 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
+		background-image: url("/img/fort3.webp");
+		background-size: 100% 100%;
+		opacity: 0.8;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3658,7 +3661,6 @@ input, select, textarea {
 		overflow: hidden;
 		position: relative;
 		text-align: center;
-		background-image: url("images/banner.jpg");
 	}
 
 		#banner h2 {

@@ -117,8 +117,8 @@ body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidun
 
 [params.cta]
 enable = true
-title = "Arcue ut vel commodo"
-body = "Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla."
+title = "Based in Galle District"
+body = "We have been operating in Galle for more than 40 years"
 
 [[params.cta.link]]
 href = "#"

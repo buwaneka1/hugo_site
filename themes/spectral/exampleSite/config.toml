@@ -112,7 +112,7 @@ body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidun
 
 [params.cta]
 enable = true
-title = "Arcue ut vel commodo"
+title = "Based in Galle District"
 body = "Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla."
 
 [[params.cta.link]]
