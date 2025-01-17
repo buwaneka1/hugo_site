@@ -8,7 +8,7 @@ theme = "spectral"
 
 [params]
 fancyTitle = "C Kalansuriya & Sons" # title for frontpage, may include image
-copyright = "John Doe"
+copyright = "C Kalansuriya and sons"
 description = 'Authorized Distributor for Munchee CBL, Prima Ceylon, Prima Grain Elevators Down South'
 startbuttonText = "Activate"
 startbuttonLink = "#"
