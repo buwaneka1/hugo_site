@@ -118,7 +118,7 @@ body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidun
 [params.cta]
 enable = true
 title = "Based in Galle District"
-body = "We have been operating in Galle for more than 40 years"
+body = "We have been operating in Galle city for more than 40 years"
 
 [[params.cta.link]]
 href = "#"
@@ -133,10 +133,10 @@ special = false
 [params.contact]
 enable = true
 title = "Contact"
-body = "Leave us a message."
-phone = "+49 (0) 030 000 000"
+body = "If you are looking for a distributor for your product in Galle leave us a message"
+phone = "+94 777907440"
 address = "1234 Somewhere Road<br />Some Place, Some State 0000<br />Some Country"
-email = "nospam@example.com"
+email = "contact@ckalanandsons.com"
 subject = "New Submission!"
 formspree_form_id = "example_invalid"
 
