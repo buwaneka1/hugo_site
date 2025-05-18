@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on C Kalansuriya &amp; Sons</title>
-    <link>//localhost:61565/tags/</link>
+    <link>//localhost:55473/tags/</link>
     <description>Recent content in Tags on C Kalansuriya &amp; Sons</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:61565/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:55473/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Css</title>
-      <link>//localhost:61565/tags/css/</link>
+      <link>//localhost:55473/tags/css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:61565/tags/css/</guid>
+      <guid>//localhost:55473/tags/css/</guid>
       <description></description>
     </item>
     <item>
       <title>Html</title>
-      <link>//localhost:61565/tags/html/</link>
+      <link>//localhost:55473/tags/html/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:61565/tags/html/</guid>
+      <guid>//localhost:55473/tags/html/</guid>
       <description></description>
     </item>
     <item>
       <title>Index</title>
-      <link>//localhost:61565/tags/index/</link>
+      <link>//localhost:55473/tags/index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:61565/tags/index/</guid>
+      <guid>//localhost:55473/tags/index/</guid>
       <description></description>
     </item>
     <item>
       <title>Markdown</title>
-      <link>//localhost:61565/tags/markdown/</link>
+      <link>//localhost:55473/tags/markdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:61565/tags/markdown/</guid>
+      <guid>//localhost:55473/tags/markdown/</guid>
       <description></description>
     </item>
     <item>
       <title>Privacy</title>
-      <link>//localhost:61565/tags/privacy/</link>
+      <link>//localhost:55473/tags/privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:61565/tags/privacy/</guid>
+      <guid>//localhost:55473/tags/privacy/</guid>
       <description></description>
     </item>
     <item>
       <title>Shortcodes</title>
-      <link>//localhost:61565/tags/shortcodes/</link>
+      <link>//localhost:55473/tags/shortcodes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:61565/tags/shortcodes/</guid>
+      <guid>//localhost:55473/tags/shortcodes/</guid>
       <description></description>
     </item>
     <item>
       <title>Text</title>
-      <link>//localhost:61565/tags/text/</link>
+      <link>//localhost:55473/tags/text/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:61565/tags/text/</guid>
+      <guid>//localhost:55473/tags/text/</guid>
       <description></description>
     </item>
     <item>
       <title>Emoji</title>
-      <link>//localhost:61565/tags/emoji/</link>
+      <link>//localhost:55473/tags/emoji/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:61565/tags/emoji/</guid>
+      <guid>//localhost:55473/tags/emoji/</guid>
       <description></description>
     </item>
   </channel>
