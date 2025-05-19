@@ -57,25 +57,30 @@ label = "Dolor"
 enable = true
 
 [[params.two.section]]
+img = "img/prima_flour_products.jpg"
+title = 'Prima Flour Wholesale & Retail Distributor - Galle'
+body = 'C. Kalansuriya & Sons holds the authorized distributorship for Prima Quality wheat flour in Galle, serving both individual consumers through our retail location on Dangedara Street, Galle City, and fulfilling the bulk requirements of bakeries and shops across the wider Galle area through our dedicated distribution network.'
+
+[[params.two.section]]
+img = "img/mega_stores_two.jpg"
+title = 'Mega Stores - Prima Ceylon'
+body = 'As a key partner of Prima Ceylon, we manage one of their select mega stores nationwide, serving as the central distribution point for wheat flour to all distributors throughout the Southern region.'
+
+[[params.two.section]]
 img = "img/estate.JPG"
 img_alt = "blurry background: white/grey"
 title = 'Tea plantation'
-body = 'Tea plantation is part of our portfolio which comes through passion towards agriculture'
+body = 'For more than three decades and a half, our passion for the art of tea cultivation has been the cornerstone of our successful and thriving tea estate in the low country, building a rich heritage of quality tea production and sustainable practices rooted in care.'
 
 [[params.two.section]]
 img = "img/hotel4.jpg"
 title = 'Hospitality: <br />Gloria Grand Hotel Unawatuna'
-body = 'One of the highest rated hotels in main stretch of Unawatuna tourist area for almost a decade'
+body = 'For a decade, we have successfully operated one of the consistently top-rated hotels in the prime area of Unawatuna, demonstrating resilience and adaptability through significant industry challenges such as the COVID-19 pandemic.'
 
 [[params.two.section]]
 img = "img/station.jpg"
 title = 'Fuel Distribution - IOC'
-body = 'We have been running an IOC fuel station for over a decade facing numerous challenges successfully'
-
-[[params.two.section]]
-img = "img/stores.jpg"
-title = 'Mega Stores - Prima Ceylon'
-body = 'We operate one of the mega stores of Prima Ceylon which handles wheat flour requirement down south'
+body = 'As a long-standing business partner with IOC in the petroleum retail industry, our company brings over a decade of operational experience, successfully navigating industry complexities and ensuring the sustained management of our fuel station which is located in a prime location in Galle.'
 
 [params.three]
 enable = true
@@ -118,7 +123,7 @@ body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidun
 [params.cta]
 enable = true
 title = "Based in Galle District"
-body = "We have been operating in Galle city for more than 40 years"
+body = "Established over four decades ago in Galle, C. Kalansuriya & Sons represents a legacy family business that has strategically diversified its interests across multiple sectors. While demonstrating adaptability and growth across various industries, our core strength and enduring expertise lie within the robust field of distribution."
 
 [[params.cta.link]]
 href = "#"
