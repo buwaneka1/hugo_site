@@ -2899,6 +2899,8 @@ button:disabled,
 .spotlight .image img {
 	border-radius: 0;
 	width: 100%;
+	aspect-ratio: 3 / 2;
+	object-fit: cover;
 }
 
 .spotlight .content {
@@ -3807,7 +3809,7 @@ body.is-menu-visible #menu {
 /* Banner */
 
 #banner {
-	background-image: url("/img/banner3.jpg");
+	background-image: url("/img/banner3_new.jpg");
 	background-size: 100% 100%;
 	opacity: 0.8;
 	display: -moz-flex;
@@ -4233,10 +4235,10 @@ body.is-mobile.landing #page-wrapper {
 
 body.is-mobile.landing #banner,
 body.is-mobile.landing .wrapper.style4 {
-	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/banner3_new.jpg");
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/banner3_new.jpg");
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/banner3_new.jpg");
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/banner3_new.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;

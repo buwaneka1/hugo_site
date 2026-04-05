@@ -6,6 +6,11 @@ paginate = "7"
 theme = "spectral"
 #googleAnalytics = "G-XXXXXXXXXX"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
 fancyTitle = "C Kalansuriya & Sons" # title for frontpage, may include image
 copyright = "C Kalansuriya and sons"
