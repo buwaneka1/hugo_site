@@ -3,21 +3,28 @@
 {{ with .Site.Params.three }}
 {{ if .enable }}
 <section id="three" class="wrapper style3 special">
-   <!--
-      <div class="inner">
-         <header class="major">
-        <h2>{{ .title | safeHTML }}</h2>
-        {{ partial "body_text.html" (dict "context" . "md" $md) }}
-         </header>
-         <ul class="features">
-        {{ range .feature }}
-        <li class="icon {{ .icon }}">
-         <h3>{{ .title | safeHTML }}</h3>
-         <p>{{ .body | safeHTML }}</p>
-            </li>
-        {{ end }}
-         </ul>
-   -->
+	<div class="inner">
+		<header class="major">
+			<h2>{{ .title | safeHTML }}</h2>
+			{{ partial "body_text.html" (dict "context" . "md" $md) }}
+		</header>
+		<ul class="features">
+			{{ range .feature }}
+			{{ if .img }}
+			<li style="text-align: center;">
+				<h3 style="margin-bottom: 1em;">{{ .title | safeHTML }}</h3>
+				<img src="{{ .img | relURL }}" style="border-radius: 50%; width: 230px; height: 230px; object-fit: cover; margin: 0 auto 1.5em auto; display: block;" alt="{{ .title }}" />
+				{{ if .name }}<h3 style="margin-bottom: 0.5em;">{{ .name | safeHTML }}</h3>{{ end }}
+				<p>{{ .body | safeHTML }}</p>
+			</li>
+			{{ else }}
+			<li class="icon {{ .icon }}">
+				<h3>{{ .title | safeHTML }}</h3>
+				<p>{{ .body | safeHTML }}</p>
+			</li>
+			{{ end }}
+			{{ end }}
+		</ul>
 	</div>
 </section>
 {{ end }}

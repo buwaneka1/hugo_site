@@ -21,9 +21,11 @@ body_is_markdown = true
 url = '/'
 title = "Home"
 
+
+
 [[params.menu.main]]
-url = '/posts/'
-title = "Posts"
+url = '/wheat-flour-shop/'
+title = "Flour Shop"
 
 [taxonomies]
     tag = "tags"
@@ -62,6 +64,11 @@ title = 'Prima Flour Wholesale & Retail Distributor - Galle'
 body = 'C. Kalansuriya & Sons holds the authorized distributorship for Prima Quality wheat flour in Galle, serving both individual consumers through our retail location on Dangedara Street, Galle City, and fulfilling the bulk requirements of bakeries and shops across the wider Galle area through our dedicated distribution network.'
 
 [[params.two.section]]
+img = "img/cbl_image.png"
+title = 'CBL Munchee Distributor - Galle/Habaraduwa'
+body = "As an authorized distributor for Ceylon Biscuits Limited (CBL), we proudly supply the beloved Munchee brand products across the region, ensuring quality and reliable delivery of Sri Lanka's favorite biscuits and confectionery to our retail partners and consumers."
+
+[[params.two.section]]
 img = "img/mega_stores_two.jpg"
 title = 'Mega Stores - Prima Ceylon'
 body = 'As a key partner of Prima Ceylon, we manage one of their select mega stores nationwide, serving as the central distribution point for wheat flour to all distributors throughout the Southern region.'
@@ -84,42 +91,20 @@ body = 'As a long-standing business partner with IOC in the petroleum retail ind
 
 [params.three]
 enable = true
-title = 'Accumsan mus tortor nunc aliquet'
-body = '''
-Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend  
-fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.
-'''
+title = 'Our Leadership'
+body = 'Meet the experienced leaders guiding C. Kalansuriya & Sons.'
 
 [[params.three.feature]]
-icon = "fa-paper-plane"
-title = "Arcu accumsan"
-body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
+img = "img/chairman.png"
+title = "Chairman"
+name = "Indra Kalansuriya"
+body = "A former Quantity Surveyor, Mr. Kalansuriya transitioned into his father’s business, applying professional precision to modernize operations. Under his visionary leadership, the company has grown into a thriving enterprise and a cornerstone of Galle's economy. Today, he is a prominent businessman, driving the firm’s continued success and reliability. "
 
 [[params.three.feature]]
-icon = "solid fa-laptop"
-title = "Ac Augue Eget"
-body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
-
-[[params.three.feature]]
-icon = "solid fa-code"
-title = "Foo bar"
-body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
-
-[[params.three.feature]]
-icon = "solid fa-headphones-alt"
-title = "Baz kram"
-body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
-
-[[params.three.feature]]
-icon = "fa-heart"
-title = "Some latin text"
-body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
-
-[[params.three.feature]]
-icon = "fa-flag"
-title = "Nothing important"
-body = "Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat."
-
+img = "img/director_test.png"
+title = "Director"
+name = "Buwaneka Kalansuriya"
+body = "Bsc. Eng(University of Moratuwa), MBA"
 [params.cta]
 enable = true
 title = "Based in Galle District"
