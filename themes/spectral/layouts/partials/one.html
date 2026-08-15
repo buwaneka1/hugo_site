@@ -10,16 +10,41 @@
 			</header>
 		</div>
 
-		<!-- Static Brand Logos Row -->
-		<div class="logo-row-container">
-			<div class="logo-row-track">
-				<div class="logo-item"><img src="{{ "img/cbl.png" | relURL }}" alt="CBL Munchee"></div>
-				<div class="logo-item"><img src="{{ "img/p_ceylon.png" | relURL }}" alt="Prima Ceylon"></div>
-				<div class="logo-item"><img src="{{ "img/g_elevators.png" | relURL }}" alt="Prima Grain Elevators"></div>
-				<div class="logo-item"><img src="{{ "img/iooc.png" | relURL }}" alt="Lanka IOC"></div>
-				<div class="logo-item"><img src="{{ "img/hotel_logo.png" | relURL }}" alt="Gloria Grand Hotel"></div>
+		<!-- Brand Logos Row with Mobile Navigation Arrows -->
+		<div class="logo-slider-wrapper" style="position: relative; max-width: 1200px; margin: 0 auto;">
+			<button class="logo-scroll-btn logo-scroll-left" id="logoScrollLeft" aria-label="Scroll Left">
+				<i class="fas fa-chevron-left"></i>
+			</button>
+			<div class="logo-row-container" id="logoRowContainer">
+				<div class="logo-row-track">
+					<div class="logo-item"><img src="{{ "img/cbl.png" | relURL }}" alt="CBL Munchee"></div>
+					<div class="logo-item"><img src="{{ "img/p_ceylon.png" | relURL }}" alt="Prima Ceylon"></div>
+					<div class="logo-item"><img src="{{ "img/g_elevators.png" | relURL }}" alt="Prima Grain Elevators"></div>
+					<div class="logo-item"><img src="{{ "img/iooc.png" | relURL }}" alt="Lanka IOC"></div>
+					<div class="logo-item"><img src="{{ "img/hotel_logo.png" | relURL }}" alt="Gloria Grand Hotel"></div>
+				</div>
 			</div>
+			<button class="logo-scroll-btn logo-scroll-right" id="logoScrollRight" aria-label="Scroll Right">
+				<i class="fas fa-chevron-right"></i>
+			</button>
 		</div>
 	</section>
+
+	<script>
+	(function() {
+		var container = document.getElementById('logoRowContainer');
+		var btnLeft = document.getElementById('logoScrollLeft');
+		var btnRight = document.getElementById('logoScrollRight');
+
+		if (container && btnLeft && btnRight) {
+			btnLeft.addEventListener('click', function() {
+				container.scrollBy({ left: -220, behavior: 'smooth' });
+			});
+			btnRight.addEventListener('click', function() {
+				container.scrollBy({ left: 220, behavior: 'smooth' });
+			});
+		}
+	})();
+	</script>
 {{ end }}
 {{ end }}

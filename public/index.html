@@ -22,7 +22,7 @@
     <meta name="generator" content="Hugo 0.128.0">
 
     
-<link rel="stylesheet" href="/css/main.min.96af57be4e6dbe06697a22823951fb6b6ecca5a4984896aaec886c274d768e6b5fcc406a3eea8cae95f59e098a24c54cea5d6cc0962907eabfdda2c88ba34c30.css" integrity="sha512-lq9Xvk5tvgZpeiKCOVH7a27MpaSYSJaq7IhsJ012jmtfzEBqPuqMrpX1ngmKJMVM6l1swJYpB&#43;q/3aLIi6NMMA==">
+<link rel="stylesheet" href="/css/main.min.c9ad87001b06a87ac1e5f64e1a665efd3b5ba71a54b0c9e7460551ba89b6738136f8afa811e9bcd91b1f26cae49e78325cdbd0940ff5282376471ef8436aacd1.css" integrity="sha512-ya2HABsGqHrB5fZOGmZe/TtbpxpUsMnnRgVRuom2c4E2&#43;K&#43;oEem82RsfJsrknngyXNvQlA/1KCN2Rx74Q2qs0Q==">
 
 
 <noscript><link rel="stylesheet" href="/css/noscript.min.e6f1ba19697eecfddfbf83ff7181b98181998f163d7005f6ae923451556bf85bef357f43dffe1522b92c1efab7fb38441f479e39b7a03e4313a8ef12b0b01f65.css" integrity="sha512-5vG6GWl&#43;7P3fv4P/cYG5gYGZjxY9cAX2rpI0UVVr&#43;FvvNX9D3/4VIrksHvq3&#43;zhEH0eeObegPkMTqO8SsLAfZQ=="></noscript>
@@ -98,16 +98,41 @@
 		</div>
 
 		
-		<div class="logo-row-container">
-			<div class="logo-row-track">
-				<div class="logo-item"><img src="/img/cbl.png" alt="CBL Munchee"></div>
-				<div class="logo-item"><img src="/img/p_ceylon.png" alt="Prima Ceylon"></div>
-				<div class="logo-item"><img src="/img/g_elevators.png" alt="Prima Grain Elevators"></div>
-				<div class="logo-item"><img src="/img/iooc.png" alt="Lanka IOC"></div>
-				<div class="logo-item"><img src="/img/hotel_logo.png" alt="Gloria Grand Hotel"></div>
+		<div class="logo-slider-wrapper" style="position: relative; max-width: 1200px; margin: 0 auto;">
+			<button class="logo-scroll-btn logo-scroll-left" id="logoScrollLeft" aria-label="Scroll Left">
+				<i class="fas fa-chevron-left"></i>
+			</button>
+			<div class="logo-row-container" id="logoRowContainer">
+				<div class="logo-row-track">
+					<div class="logo-item"><img src="/img/cbl.png" alt="CBL Munchee"></div>
+					<div class="logo-item"><img src="/img/p_ceylon.png" alt="Prima Ceylon"></div>
+					<div class="logo-item"><img src="/img/g_elevators.png" alt="Prima Grain Elevators"></div>
+					<div class="logo-item"><img src="/img/iooc.png" alt="Lanka IOC"></div>
+					<div class="logo-item"><img src="/img/hotel_logo.png" alt="Gloria Grand Hotel"></div>
+				</div>
 			</div>
+			<button class="logo-scroll-btn logo-scroll-right" id="logoScrollRight" aria-label="Scroll Right">
+				<i class="fas fa-chevron-right"></i>
+			</button>
 		</div>
 	</section>
+
+	<script>
+	(function() {
+		var container = document.getElementById('logoRowContainer');
+		var btnLeft = document.getElementById('logoScrollLeft');
+		var btnRight = document.getElementById('logoScrollRight');
+
+		if (container && btnLeft && btnRight) {
+			btnLeft.addEventListener('click', function() {
+				container.scrollBy({ left: -220, behavior: 'smooth' });
+			});
+			btnRight.addEventListener('click', function() {
+				container.scrollBy({ left: 220, behavior: 'smooth' });
+			});
+		}
+	})();
+	</script>
 
 
 

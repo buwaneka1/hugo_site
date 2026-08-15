@@ -4272,11 +4272,51 @@ body.is-mobile.landing #footer {
 	margin: 0 auto;
 }
 
+/* Mobile Scroll Navigation Arrows for Brand Logos (Minimal Transparent Chevrons) */
+.logo-scroll-btn {
+	display: none;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 99;
+	width: auto;
+	height: auto;
+	background: transparent !important;
+	color: rgba(46, 56, 66, 0.5) !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	outline: none !important;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.8em;
+	padding: 0.2em;
+	transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-scroll-btn:hover {
+	color: #21b2a6 !important;
+	background: transparent !important;
+	border: 0 !important;
+	transform: translateY(-50%);
+}
+
+.logo-scroll-left {
+	left: 5px;
+}
+
+.logo-scroll-right {
+	right: 5px;
+}
+
 @media screen and (max-width: 980px) {
 	.logo-row-track {
 		justify-content: flex-start;
 		margin: 0;
-		padding: 0 1.5em;
+		padding: 0 3em;
+	}
+	.logo-scroll-btn {
+		display: flex !important;
 	}
 }
 
