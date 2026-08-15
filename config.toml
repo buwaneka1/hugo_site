@@ -15,8 +15,8 @@ theme = "spectral"
 fancyTitle = "C Kalansuriya & Sons" # title for frontpage, may include image
 copyright = "C Kalansuriya and sons"
 description = 'Authorized Distributor for Munchee CBL, Prima Ceylon, Prima Grain Elevators Down South'
-startbuttonText = "Activate"
-startbuttonLink = "#"
+startbuttonText = "Explore Our Portfolio"
+startbuttonLink = "#two"
 body_is_markdown = true
 #custom_css = "foo.css"
 #custom_sass = "bar.scss"
@@ -25,8 +25,6 @@ body_is_markdown = true
 [[params.menu.main]]
 url = '/'
 title = "Home"
-
-
 
 [[params.menu.main]]
 url = '/wheat-flour-shop/'
@@ -39,57 +37,47 @@ title = "Flour Shop"
 
 [params.one]
 enable = true
-title = 'We are a diversified business which specializes in Distribution, Hospitality, Agriculture, Power etc.'
+title = 'We are a diversified enterprise specializing in Distribution, Hospitality, Agriculture, Fuel & Energy.'
 body = '''
-Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend  
-fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.
+With over four decades of dedicated commercial presence in Galle, C. Kalansuriya & Sons delivers robust supply chain networks and quality services across Southern Sri Lanka.
 '''
-
-[[params.one.icon]]
-icon = "fa-gem"
-style = "1"
-label = "Lorem"
-
-[[params.one.icon]]
-icon = "fa-heart"
-style = "2"
-label = "Ipsum"
-
-[[params.one.icon]]
-icon = "solid fa-code"
-style = "3"
-label = "Dolor"
 
 [params.two]
 enable = true
 
 [[params.two.section]]
+category = "Wholesale & Retail Flour"
 img = "img/prima_flour_products.jpg"
 title = 'Prima Flour Wholesale & Retail Distributor - Galle'
 body = 'C. Kalansuriya & Sons holds the authorized distributorship for Prima Quality wheat flour in Galle, serving both individual consumers through our retail location on Dangedara Street, Galle City, and fulfilling the bulk requirements of bakeries and shops across the wider Galle area through our dedicated distribution network.'
 
 [[params.two.section]]
+category = "FMCG & Confectionery"
 img = "img/cbl_image.png"
 title = 'CBL Munchee Distributor - Galle/Habaraduwa'
 body = "As an authorized distributor for Ceylon Biscuits Limited (CBL), we proudly supply the beloved Munchee brand products across the region, ensuring quality and reliable delivery of Sri Lanka's favorite biscuits and confectionery to our retail partners and consumers."
 
 [[params.two.section]]
+category = "Regional Distribution Hub"
 img = "img/mega_stores_two.jpg"
 title = 'Mega Stores - Prima Ceylon'
 body = 'As a key partner of Prima Ceylon, we manage one of their select mega stores nationwide, serving as the central distribution point for wheat flour to all distributors throughout the Southern region.'
 
 [[params.two.section]]
+category = "Agriculture & Estate"
 img = "img/estate.JPG"
 img_alt = "blurry background: white/grey"
-title = 'Tea plantation'
+title = 'Tea Plantation'
 body = 'For more than three decades and a half, our passion for the art of tea cultivation has been the cornerstone of our successful and thriving tea estate in the low country, building a rich heritage of quality tea production and sustainable practices rooted in care.'
 
 [[params.two.section]]
+category = "Hospitality"
 img = "img/hotel4.jpg"
 title = 'Hospitality: <br />Gloria Grand Hotel Unawatuna'
 body = 'For a decade, we have successfully operated one of the consistently top-rated hotels in the prime area of Unawatuna, demonstrating resilience and adaptability through significant industry challenges such as the COVID-19 pandemic.'
 
 [[params.two.section]]
+category = "Petroleum Retail"
 img = "img/station.jpg"
 title = 'Fuel Distribution - IOC'
 body = 'As a long-standing business partner with IOC in the petroleum retail industry, our company brings over a decade of operational experience, successfully navigating industry complexities and ensuring the sustained management of our fuel station which is located in a prime location in Galle.'
@@ -103,37 +91,37 @@ body = 'Meet the experienced leaders guiding C. Kalansuriya & Sons.'
 img = "img/chairman.png"
 title = "Chairman"
 name = "Indra Kalansuriya"
-body = "A former Quantity Surveyor, Mr. Kalansuriya transitioned into his father’s business, applying professional precision to modernize operations. Under his visionary leadership, the company has grown into a thriving enterprise and a cornerstone of Galle's economy. Today, he is a prominent businessman, driving the firm’s continued success and reliability. "
+body = "A former Quantity Surveyor, Mr. Kalansuriya transitioned into his father’s business, applying professional precision to modernize operations. Under his visionary leadership, the company has grown into a thriving enterprise and a cornerstone of Galle's economy. Today, he is a prominent businessman, driving the firm’s continued success and reliability."
 
 [[params.three.feature]]
 img = "img/director_test.png"
 title = "Director"
 name = "Buwaneka Kalansuriya"
-body = "Bsc. Eng(University of Moratuwa), MBA"
+body = "BSc. Eng (University of Moratuwa), MBA"
+
 [params.cta]
 enable = true
 title = "Based in Galle District"
 body = "Established over four decades ago in Galle, C. Kalansuriya & Sons represents a legacy family business that has strategically diversified its interests across multiple sectors. While demonstrating adaptability and growth across various industries, our core strength and enduring expertise lie within the robust field of distribution."
 
 [[params.cta.link]]
-href = "#"
-text = "Activate"
+href = "#contact"
+text = "Partner With Us"
 special = true
 
 [[params.cta.link]]
-href = "#"
-text = "Learn More"
+href = "#two"
+text = "Our Sectors"
 special = false
 
 [params.contact]
 enable = true
-title = "Contact"
-body = "If you are looking for a distributor for your product in Galle leave us a message"
-phone = "+94 777907440"
-address = "1234 Somewhere Road<br />Some Place, Some State 0000<br />Some Country"
+title = "Partner With Us"
+body = "If you are looking for a reliable distributor or business partner in Galle, leave us a message below."
+phone = "+94 77 790 7440"
+address = "Dangedara Street, Galle, Sri Lanka"
 email = "contact@ckalanandsons.com"
-subject = "New Submission!"
-formspree_form_id = "example_invalid"
+subject = "New Business Inquiry"
 
 [params.social]
 twitter = ""
@@ -144,16 +132,6 @@ youtube = ""
 instagram = ""
 dribble = ""
 
-# language specific options
-
 [languages.en]
 weight = 0
 languageName = "English"
-
-[languages.de]
-weight = 10
-languageName = "Deutsch"
-
-[languages.es]
-weight = 10
-languageName = "Español"
