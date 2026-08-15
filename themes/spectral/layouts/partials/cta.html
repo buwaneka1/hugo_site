@@ -2,16 +2,98 @@
 
 {{ with .Site.Params.cta }}
 {{ if .enable }}
-<section id="cta" class="wrapper  alt style2">
-	<section class="spotlight">
-		<div class="content">
-      <h2>{{ .title | safeHTML }}</h2>
-      {{ partial "body_text.html" (dict "context" . "md" $md) }}
-		</div>
-			<div class="image">
-		<img src="/img/galle_map2.png">
+<section id="cta" class="wrapper style2 special" style="padding: 4.5em 0 5.5em 0;">
+	<div class="inner" style="max-width: 1280px; width: 92%; margin: 0 auto;">
+		<!-- Key Impact Stats Counter Bar -->
+		<div class="stats-container" style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 2em; margin-bottom: 4em; background: rgba(0, 0, 0, 0.25); padding: 2.2em 1.5em; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.15);">
+			<div class="stat-item" style="flex: 1; min-width: 180px; text-align: center;">
+				<h3 class="stat-number" data-target="40" data-suffix="+" style="font-size: 2.8em; font-weight: 800; color: #21b2a6; margin-bottom: 0.2em; font-family: 'Outfit', sans-serif;">0+</h3>
+				<p style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0; color: rgba(255, 255, 255, 0.85); font-size: 0.9em;">Years of Excellence</p>
 			</div>
-	</section>
+			<div class="stat-item" style="flex: 1; min-width: 180px; text-align: center;">
+				<h3 class="stat-number" data-target="4" data-suffix="" style="font-size: 2.8em; font-weight: 800; color: #21b2a6; margin-bottom: 0.2em; font-family: 'Outfit', sans-serif;">0</h3>
+				<p style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0; color: rgba(255, 255, 255, 0.85); font-size: 0.9em;">National Brand Partners</p>
+			</div>
+			<div class="stat-item" style="flex: 1; min-width: 180px; text-align: center;">
+				<h3 class="stat-number" data-target="500" data-suffix="+" style="font-size: 2.8em; font-weight: 800; color: #21b2a6; margin-bottom: 0.2em; font-family: 'Outfit', sans-serif;">0+</h3>
+				<p style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0; color: rgba(255, 255, 255, 0.85); font-size: 0.9em;">Retail Outlets Served</p>
+			</div>
+			<div class="stat-item" style="flex: 1; min-width: 180px; text-align: center;">
+				<h3 class="stat-number" data-target="6" data-suffix="" style="font-size: 2.8em; font-weight: 800; color: #21b2a6; margin-bottom: 0.2em; font-family: 'Outfit', sans-serif;">0</h3>
+				<p style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0; color: rgba(255, 255, 255, 0.85); font-size: 0.9em;">Diversified Sectors</p>
+			</div>
+		</div>
+
+		<!-- Based in Galle Details & Map -->
+		<div class="row gtr-uniform" style="align-items: center; justify-content: space-between; text-align: left;">
+			<div class="col-6 col-12-medium">
+				<header class="major" style="margin-bottom: 1.5em; text-align: left;">
+					<h2 style="margin-bottom: 0.6em; font-size: 2.2em; font-weight: 700;">{{ .title | safeHTML }}</h2>
+					<div style="font-size: 1.05em; line-height: 1.8em; color: rgba(255, 255, 255, 0.9);">
+						{{ partial "body_text.html" (dict "context" . "md" $md) }}
+					</div>
+				</header>
+				{{ with .link }}
+				<ul class="actions" style="margin-top: 2.2em;">
+					{{ range . }}
+					<li><a href="{{ .href }}" class="button {{ if .special }}primary{{ end }}">{{ .text }}</a></li>
+					{{ end }}
+				</ul>
+				{{ end }}
+			</div>
+			<div class="col-6 col-12-medium" style="text-align: center;">
+				<div style="border-radius: 16px; overflow: hidden; box-shadow: 0 20px 48px rgba(0, 0, 0, 0.45); border: 1px solid rgba(255, 255, 255, 0.2); background: rgba(0, 0, 0, 0.2); width: 100%;">
+					<img src="{{ "img/galle_district_1.png" | relURL }}" alt="Galle District Location" style="width: 100%; height: auto; min-height: 380px; max-height: 540px; object-fit: cover; object-position: center; display: block;" />
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
+
+<script>
+(function() {
+	function initStatsAnimation() {
+		var statNumbers = document.querySelectorAll('.stat-number');
+		if (!statNumbers.length) return;
+
+		var observer = new IntersectionObserver(function(entries) {
+			entries.forEach(function(entry) {
+				if (entry.isIntersecting) {
+					var el = entry.target;
+					var target = parseInt(el.getAttribute('data-target'), 10);
+					var suffix = el.getAttribute('data-suffix') || '';
+					var start = 0;
+					var duration = 1500;
+					var stepTime = 20;
+					var steps = duration / stepTime;
+					var increment = target / steps;
+
+					var timer = setInterval(function() {
+						start += increment;
+						if (start >= target) {
+							el.textContent = target + suffix;
+							clearInterval(timer);
+						} else {
+							el.textContent = Math.floor(start) + suffix;
+						}
+					}, stepTime);
+
+					observer.unobserve(el);
+				}
+			});
+		}, { threshold: 0.2 });
+
+		statNumbers.forEach(function(num) {
+			observer.observe(num);
+		});
+	}
+
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', initStatsAnimation);
+	} else {
+		initStatsAnimation();
+	}
+})();
+</script>
 {{ end }}
 {{ end }}

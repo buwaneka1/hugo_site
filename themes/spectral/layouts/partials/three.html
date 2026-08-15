@@ -4,27 +4,36 @@
 {{ if .enable }}
 <section id="three" class="wrapper style3 special">
 	<div class="inner">
-		<header class="major">
-			<h2>{{ .title | safeHTML }}</h2>
-			{{ partial "body_text.html" (dict "context" . "md" $md) }}
+		<header class="major" style="margin-bottom: 3.5em;">
+			<h2>Board Of Directors</h2>
+			<p style="max-width: 42em; margin: 0 auto; color: rgba(255, 255, 255, 0.85);">
+				Meet the experienced leadership guiding C. Kalansuriya & Sons with strategic vision and regional expertise.
+			</p>
 		</header>
-		<ul class="features">
+
+		<div class="row gtr-uniform" style="justify-content: center; max-width: 1200px; margin: 0 auto;">
 			{{ range .feature }}
-			{{ if .img }}
-			<li style="text-align: center;">
-				<h3 style="margin-bottom: 1em;">{{ .title | safeHTML }}</h3>
-				<img src="{{ .img | relURL }}" style="border-radius: 50%; width: 230px; height: 230px; object-fit: cover; margin: 0 auto 1.5em auto; display: block;" alt="{{ .title }}" />
-				{{ if .name }}<h3 style="margin-bottom: 0.5em;">{{ .name | safeHTML }}</h3>{{ end }}
-				<p>{{ .body | safeHTML }}</p>
-			</li>
-			{{ else }}
-			<li class="icon {{ .icon }}">
-				<h3>{{ .title | safeHTML }}</h3>
-				<p>{{ .body | safeHTML }}</p>
-			</li>
+			<div class="col-6 col-12-medium">
+				<div class="director-unit">
+					<div class="director-card-col">
+						<div class="director-card">
+							<div class="director-watermark">Directors</div>
+							{{ if .img }}
+							<img class="director-img" src="{{ .img | relURL }}" alt="{{ .name }}" />
+							{{ end }}
+							<div class="director-card-footer">
+								{{ if .name }}<h3 class="director-name">{{ .name | safeHTML }}</h3>{{ end }}
+								<p class="director-title">{{ .title | safeHTML }}</p>
+							</div>
+						</div>
+					</div>
+					<div class="director-bio-col">
+						<p class="director-bio-text">{{ .body | safeHTML }}</p>
+					</div>
+				</div>
+			</div>
 			{{ end }}
-			{{ end }}
-		</ul>
+		</div>
 	</div>
 </section>
 {{ end }}

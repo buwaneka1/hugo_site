@@ -2,20 +2,34 @@
 
 {{ with .Site.Params.two }}
 {{ if .enable }}
-<section id="two" class="wrapper alt style2">
-  {{ range .section }}
-	<section class="spotlight">
-    {{ if .img }}
-    <div class="image">
-      <img src="{{ .img | relURL }}" {{ with .img_alt }}alt="{{ . }}"{{ end }} />
-    </div>
-    {{ end }}
-    <div class="content">
-      <h2>{{ .title | safeHTML }}</h2>
-      {{ partial "body_text.html" (dict "context" . "md" $md) }}
+<section id="two" class="wrapper style3 special" style="padding: 5em 0 5em 0;">
+	<div class="inner">
+		<header class="major" style="margin-bottom: 3.5em;">
+			<h2>Our Business Portfolio</h2>
+			<p style="max-width: 42em; margin: 0 auto; color: rgba(255, 255, 255, 0.85);">
+				Strategic diversification across distribution, hospitality, agriculture, and fuel energy down south.
+			</p>
+		</header>
+
+		<div class="business-grid">
+			{{ range .section }}
+			<div class="business-card">
+				{{ if .img }}
+				<div class="business-card-image">
+					<img src="{{ .img | relURL }}" {{ with .img_alt }}alt="{{ . }}"{{ end }} />
+				</div>
+				{{ end }}
+				<div class="business-card-body">
+					{{ with .category }}<span class="sector-badge">{{ . }}</span>{{ end }}
+					<h3>{{ .title | safeHTML }}</h3>
+					<div class="business-card-text">
+						{{ partial "body_text.html" (dict "context" . "md" $md) }}
+					</div>
+				</div>
+			</div>
+			{{ end }}
 		</div>
-	</section>
-  {{ end }}
+	</div>
 </section>
 {{ end }}
 {{ end }}

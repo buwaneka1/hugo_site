@@ -2,47 +2,92 @@
 
 {{ with .Site.Params.contact }}
 {{ if .enable }}
-<section id="contact" class="wrapper style5">
-  <div class="inner">
-    <header class="major">
-      <h2>{{ .title }}</h2>
-      {{ partial "body_text.html" (dict "context" . "md" $md) }}
-      <p>email: contact@ckalanandsons.com</p>
+<section id="contact" class="wrapper style3 special" style="padding: 5em 0 5.5em 0; background-color: #161c23; border-top: 1px solid rgba(255, 255, 255, 0.08);">
+  <div class="inner" style="max-width: 1240px; width: 92%; margin: 0 auto;">
+    <header class="major" style="margin-bottom: 3.5em; text-align: center;">
+      <h2 style="font-size: 2.2em; font-weight: 700; color: #ffffff;">{{ .title }}</h2>
+      <p style="max-width: 42em; margin: 0 auto; color: rgba(255, 255, 255, 0.85);">
+        Connect with our Galle headquarters for commercial distribution inquiries, partnership opportunities, and business orders.
+      </p>
     </header>
-      <!--
-      This code represents a contact form layout in an HTML file. It is typically used in a website or web application to allow users to send messages or inquiries.
+    
+    <div class="row gtr-uniform" style="align-items: flex-start; justify-content: space-between; text-align: left;">
+      <!-- Left Column: Executive Contact Details -->
+      <div class="col-5 col-12-medium">
+        <div style="display: flex; flex-direction: column; gap: 1.4em;">
+          
+          <div class="contact-info-card">
+            <div class="contact-icon-box">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4 class="contact-info-label">Headquarters Address</h4>
+              <p class="contact-info-val">Dangedara Street, Galle, Sri Lanka</p>
+            </div>
+          </div>
 
-      The form consists of the following elements:
-      - Hidden input field for the subject of the message.
-      - Input field for the user's name.
-      - Input field for the user's email address.
-      - Textarea for the user to enter their message.
-      - Submit and reset buttons.
+          <div class="contact-info-card">
+            <div class="contact-icon-box">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div>
+              <h4 class="contact-info-label">Direct Phone</h4>
+              <p class="contact-info-val">{{ .phone }}</p>
+            </div>
+          </div>
 
-      The form is structured using a grid layout, with the name and email fields taking up half of the row each, and the message field taking up the entire row.
+          <div class="contact-info-card">
+            <div class="contact-icon-box">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4 class="contact-info-label">Email Inquiry</h4>
+              <p class="contact-info-val">{{ .email }}</p>
+            </div>
+          </div>
 
-      To use this form, you can include it in your HTML file and customize the placeholders and button labels as needed.
+          <div class="contact-info-card">
+            <div class="contact-icon-box">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <h4 class="contact-info-label">Operating Hours</h4>
+              <p class="contact-info-val">Monday – Saturday: 8:00 AM – 5:30 PM</p>
+            </div>
+          </div>
 
-      Example usage:
-      <div class="row gtr-uniform">
-        <input type="hidden" name="subject" value="{{ .subject }}" />
-        <div class="col-6 col-12-xsmall">
-          <input type="text" name="name" id="name" value="" placeholder="{{ i18n "name" }}" required />
-        </div>
-        <div class="col-6 col-12-xsmall">
-          <input type="email" name="email" id="email" value="" placeholder="{{ i18n "email" }}" required />
-        </div>
-        <div class="col-12">
-          <textarea name="message" id="message" placeholder="{{ i18n "yourmessage" }}" rows="6" required></textarea>
-        </div>
-        <div class="col-12">
-          <ul class="actions">
-            <li><input type="submit" value="{{ i18n "send" }}" class="primary" /></li>
-            <li><input type="reset" value="{{ i18n "reset" }}" /></li>
-          </ul>
         </div>
       </div>
-      -->
+
+      <!-- Right Column: Interactive Form -->
+      <div class="col-7 col-12-medium">
+        <div class="contact-form-card">
+          <h3 style="margin-bottom: 1.2em; font-size: 1.3em; color: #ffffff; font-weight: 700;">Send Us a Message</h3>
+          <form method="post" action="https://formspree.io/f/{{ .formspree_form_id | default "contact" }}">
+            <div class="row gtr-uniform">
+              <input type="hidden" name="subject" value="{{ .subject }}" />
+              <div class="col-6 col-12-xsmall">
+                <label style="color: rgba(255,255,255,0.7); font-size: 0.8em; font-weight: 600; margin-bottom: 0.4em; display: block;">FULL NAME</label>
+                <input type="text" name="name" id="name" value="" placeholder="e.g. John Perera" required />
+              </div>
+              <div class="col-6 col-12-xsmall">
+                <label style="color: rgba(255,255,255,0.7); font-size: 0.8em; font-weight: 600; margin-bottom: 0.4em; display: block;">EMAIL ADDRESS</label>
+                <input type="email" name="email" id="email" value="" placeholder="e.g. john@example.com" required />
+              </div>
+              <div class="col-12">
+                <label style="color: rgba(255,255,255,0.7); font-size: 0.8em; font-weight: 600; margin-bottom: 0.4em; display: block;">INQUIRY / MESSAGE</label>
+                <textarea name="message" id="message" placeholder="How can C. Kalansuriya & Sons assist your business?" rows="5" required></textarea>
+              </div>
+              <div class="col-12" style="margin-top: 1em;">
+                <ul class="actions" style="margin-bottom: 0;">
+                  <li><input type="submit" value="Send Message" class="primary" style="padding: 0 2.4em; height: 3.2em; line-height: 3.2em;" /></li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 {{ end }}
